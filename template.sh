@@ -6,7 +6,7 @@ mkdir -p research
 touch src/__init__.py #this is a constructor file
 touch src/helper.py
 touch src/prompt.py
-touch .env
+touch .env #base environmet will already have a lot of files in it
 touch setup.py
 touch app.py
 touch research/trials.ipynb #notebook file

@@ -1,0 +1,9 @@
+langchain==0.3.26 #LangChain is the heart of your chatbot’s reasoning pipeline — it lets you connect LLMs (like OpenAI or AWS Bedrock models) with external tools, databases, APIs, and memory components.
+flask==3.1.1 #Flask turns your chatbot logic into a web application or API that users can interact with via a browser or HTTP request.
+sentence-transformers==4.1.0 #Used to convert medical documents or user queries into numerical vectors before storing or retrieving them from Pinecone.
+pypdf==5.6.1 #to load the pdf files. as knowledge sources for your chatbot. This library helps load and parse those files into raw text.
+python-dotenv==1.1.0 #Load environment variables from a .env file. Why needed:To securely store and access secrets like:OpenAI API key Pinecone API keyAWS credentials
+langchain-pinecone==0.2.8 #This package provides built-in classes to connect LangChain directly with Pinecone for vector storage and retrieval.
+langchain-openai==0.3.24 #LangChain integration with OpenAI models. Send structured prompts to OpenAI models and get structured responses.
+langchain-community==0.3.26 #needed as a dependency. Contains community-maintained integrations that are dependencies for LangChain.
+-e . #Editable install---for the setpup.py file. It installs your project (the current directory, .) in editable mode — meaning any changes you make in your source code are immediately reflected without reinstalling.
